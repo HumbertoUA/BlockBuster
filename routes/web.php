@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/mostrarPeliculas/{id}','peliculasController@mostrarPeliculas');
