@@ -17,7 +17,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="{{url('/home')}}">Inicio</a>
+                <a class="navbar-brand" href="{{url('/')}}">Inicio</a>
                 <a class="navbar-brand" href="#">Renta</a>
                 <a class="navbar-brand" href="#" id="menu-toggle">Peliculas</a>
                 <img class="img" src="{{asset ("/img/logo.png")}}" width="20" height="20">
@@ -40,15 +40,19 @@
                     <a>Categorias:</a>
                 </li>
 
-
-
-
-
-
+                    @foreach($categorias as $c)
+                <li>
+                    <a href="{{url('/mostrarPeliculas')}}/{{$c->id_categoria}}">{{$c->nombre}}</a>
+                </li>
+                    @endforeach
 
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
+
+
+
+        
 
     </div>
     <!-- /#wrapper -->

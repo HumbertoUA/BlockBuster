@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/','moviesController@home');
 
-Route::get('/mostrarPeliculas/{id}','peliculasController@mostrarPeliculas');
+Route::get('/mostrarPeliculas/{id}','moviesController@mPeliculas');
