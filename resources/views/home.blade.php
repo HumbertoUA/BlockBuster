@@ -50,12 +50,28 @@
         </div>
         <!-- /#sidebar-wrapper -->
 
-
-
-        
-
     </div>
     <!-- /#wrapper -->
+
+       <!--Seccion donde se mostraran las peliculas-->
+        <section>
+
+                    @yield('encabezado')
+                    <hr>
+                    @yield('contenido')
+
+        </section>
+
+         <div class="container">
+             <hr>
+             <!-- Footer -->
+                <center>
+                    <footer>
+                        <p>&copy; Mtto. de Software 2016 BlockBuster  <img src="{{asset ("/img/logo.png")}}" width="40" height="40"> </p>
+                    </footer>
+                </center>
+         </div>
+
 
 
     <!-- jQuery -->
@@ -63,5 +79,16 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{asset ("js/bootstrap.min.js")}}"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    @yield('script')
+
+    
 </body>
 </html>
