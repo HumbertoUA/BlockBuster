@@ -42,7 +42,7 @@
 
                     @foreach($categorias as $c)
                 <li>
-                    <a href="{{url('/mostrarPeliculas')}}/{{$c->id_categoria}}">{{$c->nombre}}</a>
+                    <a href="{{url('/mostrarPeliculas')}}/{{$c->id}}">{{$c->nombre}}</a>
                 </li>
                     @endforeach
 
@@ -59,6 +59,7 @@
                     @yield('encabezado')
                     <hr>
                     @yield('contenido')
+
 
         </section>
 
