@@ -1,12 +1,24 @@
 
 
 body {
-    padding-top: 40px;
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
 
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
 }
 
 .caption {
-    height: auto;
+    height: 130px;
     overflow: hidden;
 }
 
@@ -15,49 +27,25 @@ body {
 }
 
 .thumbnail img {
-    position: relative;
-    margin: 10px auto;
+    max-height: 200px;
+    width: 50%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
 }
 
 .thumbnail {
     padding: 0;
 }
 
-
-.img{
-    
-    margin: 15px;
-    margin-left: -10px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
 }
 
-.img:hover {
-
-            transform: rotate(-720deg);
-            -webkit-transform: rotate(-720deg); // IE 9
-            -moz-transform: rotate(-720deg); // Firefox
-            -o-transform: rotate(-720deg); // Safari and Chrome
-            -ms-transform: rotate(-720deg);
-           
-}
-
-.imgA {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
-}
-
-.imgB {
-        -moz-transform: scaleX(1);
-        -o-transform: scaleX(1);
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+footer {
+    margin: 50px 0;
 }
